@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="loginUser()">
+    Login to Dashboard
+  </ion-button>
+
+  <a [routerLink]="['/dashboard']">Check Auth guard</a>
+</ion-content>
