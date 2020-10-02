@@ -4,10 +4,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-button (click)="loginUser()">
-    Login to Dashboard
-  </ion-button>
-
-  <a [routerLink]="['/dashboard']">Check Auth guard</a>
+<ion-content fullscreen class="ion-padding" style="display: flex;align-content: center;">
+  <ion-card class="ion-padding">
+    <ion-list style="text-align: center;">
+      <ion-item>
+        <ion-label position="floating">Email ID/Phone number</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <br />
+      <ion-button (click)="loginUser()">
+        Login to Dashboard
+      </ion-button>
+    </ion-list>
+  </ion-card>
+  <br />
+  <!-- <a [routerLink]="['/dashboard']">Check Auth guard</a> -->
 </ion-content>

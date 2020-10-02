@@ -1,11 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Dashboard</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid" color="danger" (click)="logoutUser()">
+        Logout
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-button (click)="logoutUser()">
-    Logout
-  </ion-button>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dashboard</ion-card-title>
+      <ion-card-subtitle>Welcome !!</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
